@@ -15,5 +15,5 @@ jobs:
           password: ${{ secrets.PASSWORD }}
           port: ${{ secrets.PORT }}
           script: |
-              cd ../pub/CMSC389T-Web-P5
+              cd ../pub
               git pull

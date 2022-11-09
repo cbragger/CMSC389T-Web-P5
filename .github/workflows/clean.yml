@@ -16,4 +16,4 @@ jobs:
           script: |
             cd ../pub
              unalias rm
-             rm -rf CMSC389T-Web-P5
+             rm -rf *

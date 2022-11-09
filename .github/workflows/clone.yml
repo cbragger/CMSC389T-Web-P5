@@ -15,4 +15,4 @@ jobs:
           port: ${{ secrets.PORT }}
           script: |
               cd ../pub
-              git clone git@github.com:cbragger/CMSC389T-Web-P5.git
+              git clone git@github.com:cbragger/CMSC389T-Web-P5.git .
