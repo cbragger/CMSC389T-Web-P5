@@ -12,11 +12,11 @@ COPY . /home/node/app/
 
 WORKDIR /home/node/app
 
-USER node
-
 RUN npm init -y
 
 RUN npm install
+
+USER node
 
 EXPOSE 8080
 
