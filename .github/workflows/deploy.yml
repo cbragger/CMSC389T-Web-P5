@@ -1,9 +1,10 @@
-name: clone workflow
+name: deployment workflow
 on: 
-  workflow_dispatch:   
+  push:
+    branches: [main]
 jobs:
-  clone:
-    name: Clone
+  deploy:
+    name: Deploy
     runs-on: ubuntu-latest
     steps:
       - name: executing
@@ -14,4 +15,5 @@ jobs:
           password: ${{ secrets.PASSWORD }}
           port: ${{ secrets.PORT }}
           script: |
-              git clone git@github.com:cbragger/CMSC389T-Web-P5.git
+              cd  CMSC389T-Web-P5
+              git pull
